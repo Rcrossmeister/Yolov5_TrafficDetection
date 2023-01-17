@@ -26,13 +26,13 @@
 storage.googleapis.com
 #runs/*
 #data/*
-data/images/*
+../Yolov5_TrafficDetection/data/images/*
 !data/*.yaml
-!data/hyps
-!data/scripts
-!data/images
-!data/images/zidane.jpg
-!data/images/bus.jpg
+!../Yolov5_TrafficDetection/data/hyps
+!../Yolov5_TrafficDetection/data/scripts
+!../Yolov5_TrafficDetection/data/images
+!../Yolov5_TrafficDetection/data/images/zidane.jpg
+!../Yolov5_TrafficDetection/data/images/bus.jpg
 !data/*.sh
 
 #results*.csv
