@@ -1,5 +1,5 @@
-weights: ''
-cfg: models/hub/yolov5l6cp.yaml
+weights: yolov5l6.pt
+cfg: models/hub/yolov5l6.yaml
 data: data/cityscape.yaml
 hyp:
   lr0: 0.01
@@ -65,4 +65,4 @@ entity: null
 upload_dataset: false
 bbox_interval: -1
 artifact_alias: latest
-save_dir: runs/train/exp2
+save_dir: runs/train/exp

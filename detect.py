@@ -216,10 +216,10 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/exp2/weights/last.pt', help='model path or triton URL')
-    parser.add_argument('--source', type=str, default= '/Users/rcross/Desktop/工作/科研/SCI/Code/leftImg8bit_demoVideo/leftImg8bit/demoVideo/0.mp4', help='file/dir/URL/glob/screen/0(webcam)')
+    parser.add_argument('--weights', nargs='+', type=str, default= '/Users/rcross/Desktop/工作/科研/SCI/Code/yolov5-master/runs/train/exp13/weights/best.pt', help='model path or triton URL')
+    parser.add_argument('--source', type=str, default= '/Users/rcross/Desktop/工作/科研/SCI/Dataset/leftImg8bit_demoVideo/leftImg8bit/demoVideo/0.mp4', help='file/dir/URL/glob/screen/0(webcam)')
     parser.add_argument('--data', type=str, default=ROOT / 'data/cityscape.yaml', help='(optional) dataset.yaml path')
-    parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[1280,1280], help='inference size h,w')
+    parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[1024], help='inference size h,w')
     parser.add_argument('--conf-thres', type=float, default=0.75, help='confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.45, help='NMS IoU threshold')
     parser.add_argument('--max-det', type=int, default=1000, help='maximum detections per image')

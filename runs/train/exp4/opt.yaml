@@ -30,9 +30,9 @@ hyp:
   mosaic: 1.0
   mixup: 0.1
   copy_paste: 0.1
-epochs: 1500
-batch_size: 72
-imgsz: 640
+epochs: 150
+batch_size: 16
+imgsz: 1024
 rect: true
 resume: false
 nosave: false
@@ -43,7 +43,7 @@ evolve: null
 bucket: ''
 cache: null
 image_weights: false
-device: 1,2
+device: 0,2
 multi_scale: false
 single_cls: false
 optimizer: SGD
@@ -65,4 +65,4 @@ entity: null
 upload_dataset: false
 bbox_interval: -1
 artifact_alias: latest
-save_dir: runs/train/exp4
+save_dir: runs/train/exp19
